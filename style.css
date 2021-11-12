@@ -1,0 +1,271 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',serif;
+  color: rgb(17, 17, 85);
+}
+html{
+  scroll-behavior: smooth;
+}
+*{
+  font-family: 'Poppins',serif;
+}
+
+
+
+.card-img-top{
+    height: 280px;
+}
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+    
+  }
+  
+  #map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .open
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 10000;
+  }
+  .open .layer
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: top;
+    animation: open 1s ease-in-out forwards;
+  }
+  .open .layer:nth-child(1)
+  {
+    background: rgba(3, 0, 8, 0.767);
+    z-index: 2;
+  }
+  .open .layer:nth-child(2)
+  {
+    background: #031d2b56;
+    animation-delay: 2s;
+    z-index: 1;
+  }
+  @keyframes open
+  {
+    0%
+    {
+      transform: scaleY(1);
+    }
+    100%
+    {
+      transform: scaleY(0);
+    }
+  }
+
+ .nav-link,.navbar-brand{
+   position: relative;
+   font-weight: bold;
+   font-family: serif;
+   color: rgba(23, 8, 194, 0.527);
+  
+ }
+  a{
+    text-align: center;
+    font-size: large;
+    font-style: initial;
+    font-weight: bold;
+    color: rgba(57, 11, 165, 0.829);
+  }
+ 
+  .lead{
+    color: red;
+    font-size: 2rem; 
+    font-weight: bolder; 
+    animation: type 6s steps(34);
+    overflow: hidden;
+    white-space: nowrap;  
+    border-right: 6px solid red;
+    width: 34ch; 
+  }
+  @keyframes type {
+    0%{
+      width: 0ch;
+    }
+    100%{
+      width: 34ch;
+    }
+    
+  }
+  .sub-lead{
+    font-size:large;
+    font-style: initial;
+    font-weight: bold;
+    color: rgba(44, 42, 68, 0.623);
+    text-align: center;
+  }
+  .ssgmce{
+    position: relative;
+    height: 3rem;
+  }
+  .titiles{
+    color:rgba(2, 2, 92, 0.918);
+    text-align: center;
+    font-weight: bolder;
+    font-family:fantasy; 
+  }
+  .s2{
+    text-align: start;
+  }
+  .sub-title{
+    color: rgba(28, 22, 58, 0.842);
+    font-family: sans-serif;
+    font-style:inherit;
+    font-size: xx-large;
+  }
+.para1{
+  font-size: large;
+  color: rgba(77, 77, 90, 0.623);
+  font-family: sans-serif;
+  
+}  
+.insta{
+  color: crimson;
+}
+
+.carousel-control-prev-icon{
+  color: blue;
+} 
+.face{
+  color: blue;
+}
+.Mentors{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly ;
+  color: rgb(36, 4, 36);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+.logo-img{
+  margin-top: 2rem;
+}
+.essa-name{
+  font-size: xx-large;
+}
+.copy{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.core-card{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgba(66, 2, 66, 0.945);
+  box-shadow: rgb(77, 53, 53);
+ 
+  
+  
+}
+.executive-card{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgba(63, 31, 63, 0.945);
+  box-shadow: rgb(77, 53, 53);
+
+}
+
+@media (max-width:850px) {
+  .img_name{
+    position: relative;
+    margin-top: 5px;
+  margin-right: 60px;
+    width: 15rem;
+  }
+  .essa-name{
+    text-align: center;
+    font-size: 35px;
+  }
+   .lead{
+     text-align: center;
+  
+    font-size: 1rem;
+    font-weight: bolder;
+  } 
+  .footer{
+    font-size: 0.5rem;
+  }
+}
+.footer{
+  font-size: 1rem;
+}
+
+.text {
+  font-size: 15px;
+}
+.moreText1,.moreText2,.moreText3,.moreText4,.moreText5,.moreText6  {
+  display: none;
+}
+.read-more-btn {
+  padding: 12px 50px;
+  background-color: rgba(149, 170, 197, 0.171);
+  color: rgb(53, 49, 49);
+  border-radius: 40px;
+  outline: none;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.text.show-more1 .moreText1{
+  display: inline;
+}
+.text.show-more2 .moreText2{
+  display: inline;
+}
+.text.show-more3 .moreText3{
+  display: inline;
+}
+.text.show-more4 .moreText4{
+  display: inline;
+}
+.text.show-more5 .moreText5{
+  display: inline;
+}
+.text.show-more6 .moreText6{
+  display: inline;
+}
+
+.text.show-more1 .dots1{
+  display: none;
+}
+.text.show-more2 .dots2{
+  display: none;
+}
+.text.show-more3 .dots3{
+  display: none;
+}
+.text.show-more4 .dots4{
+  display: none;
+}
+.text.show-more5 .dots5{
+  display: none;
+}
+.text.show-more6 .dots6{
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.body_text123{
+  overflow-x: hidden;
+}
+
+
